@@ -1,0 +1,48 @@
+.navbar-collapse a{
+    text-decoration: none;
+}
+.navbar-collapse img {
+    height: 20px;
+}
+.navbar-toggler{
+    margin-left: 1%;
+}
+.logo-nav img{
+    width: 160px;
+    margin-left: 10%;
+}
+.busca {
+    margin-right: 2%;
+}
+.busca button{
+    margin-left: -15px;
+}
+.sociais {
+    margin-right: 1%;
+}
+body{
+    background-color:white;
+}
+footer{
+    background-color: #fafafa;
+}
+
+@media (max-width: 990px){
+    .logo-nav img{
+        width: 160px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .navbar-collapse img {
+        height: 30px;
+    }
+    .busca {
+        margin-bottom: -32px;
+    }
+    .busca button{
+        margin-left: 0px;
+    }
+    .sociais {
+        float: right;
+    }
+}
