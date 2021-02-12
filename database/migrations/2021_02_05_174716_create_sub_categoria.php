@@ -20,7 +20,7 @@ class CreateSubcategoria extends Migration
             $table->string('icon', 40);
             $table->text('descricao');
             $table->boolean('status');
-            $table->foreignId('categoria_id')->constrained('categoria')->onUpdate('cascade')->onDelete('cascade');;
+            $table->foreignId('categoria_id')->constrained('categoria')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
