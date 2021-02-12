@@ -21,7 +21,8 @@ class Categoria extends Model
         'image',
         'icon',
         'descricao',
-        'status',   
+        'status',
+        'pai',
     ];
 
     /**
@@ -35,7 +36,6 @@ class Categoria extends Model
     ];
 
     public function subCategoria(){
-        return $this->hasMany(SubCategoria::class, 'categoria_id', 'id');
+        return $this->hasMany(Categoria::class, 'pai');
     }
-
 }
